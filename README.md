@@ -253,6 +253,20 @@ $table->dropColumn('user_id');
 
 #nei model
 ```
+```bash
+php artisan config:cache
+
+MAIL_MAILER=smtp
+MAIL_HOST=sandbox.smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=96212ab08a74b8
+MAIL_PASSWORD=237181b26445c1
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS="hello@example.com"
+MAIL_FROM_NAME="${APP_NAME}"
+# crea cartella Mail con file NewContat
+php artisan make:mail NewContat
+```
 ##consegna esercizio 
 
 nome repo: laravel-api
