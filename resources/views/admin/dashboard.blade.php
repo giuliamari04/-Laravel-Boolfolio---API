@@ -1,12 +1,13 @@
 @extends('layouts.admin')
 
 @section('content')
+<div id="dashboard">
+<section class="text-light py-5 my-mt">
 
-<section>
     <div class="container-fluid px-4">
         <h1 class="mt-4">  {{ __('Dashboard') }}</h1>
         <ol class="breadcrumb mb-4">
-            <li class="breadcrumb-item active">Dashboard</li>
+            <li class="breadcrumb-item active text-light ">Dashboard</li>
         </ol>
 
         <div class="row">
@@ -572,4 +573,5 @@
         </div>
     </div>
  </section>
+</div>
 @endsection

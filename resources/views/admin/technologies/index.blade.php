@@ -1,9 +1,10 @@
 @extends('layouts.admin')
 @section('content')
-    <section class="container">
-        <h1>technology List</h1>
+<div id="technology">
+    <section class="container my-mt py-5">
+        <h1 class="pt-5">technology List</h1>
        <div class="text-end">
-        <a class="btn btn-success" href="{{route('admin.technologies.create')}}">Crea nuovo technology</a>
+        <a class="btn  my-btn-light second-color border-0  my-3" href="{{route('admin.technologies.create')}}">Crea nuovo technology</a>
     </div>
 
     @if(session()->has('message'))
@@ -26,7 +27,7 @@
                     <th scope="row">{{$technology->id}}</th>
                     <td><a href="{{route('admin.technologies.show', $technology->slug)}}" title="View technology">{{$technology->name}}</a></td>
 
-                    <td><a class="link-secondary" href="{{route('admin.technologies.edit', $technology->slug)}}" title="Edit technology"><i class="fa-solid fa-pen"></i></a></td>
+                    <td><a class="link-secondary" href="{{route('admin.technologies.edit', $technology->slug)}}" title="Edit technology"><i class="fa-solid fa-pen text-light "></i></a></td>
                     <td>
                         <form action="{{route('admin.technologies.destroy', $technology->slug)}}" method="POST">
                         @csrf
@@ -39,5 +40,6 @@
         </tbody>
     </table>
     </section>
+</div>
      @include('partials.modal-delete')
 @endsection

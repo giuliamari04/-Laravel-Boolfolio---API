@@ -1,7 +1,8 @@
 @extends('layouts.admin')
 @section('content')
-<section class="container">
-    <h1>{{$category->name}}</h1>
+<div class="my-bg">
+    <section class="container my-mt text-light py-5">
+    <h1 class="pt-5">{{$category->name}}</h1>
     <h3>Post List</h3>
     <ul class="list-group list-group-flush">
         @forelse ($category->posts as $post)
@@ -15,4 +16,6 @@
         @endforelse
     </ul>
 </section>
+</div>
+
 @endsection

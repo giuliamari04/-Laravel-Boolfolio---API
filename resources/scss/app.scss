@@ -1,4 +1,7 @@
 @use './partials/variables' as *;
+@use './partials/login' as*;
+@use './partials/dashboard' as *;
+@use './partials/register' as *;
 
 $fa-font-path: "../fonts/webfonts" !default;
 
@@ -9,17 +12,43 @@ $fa-font-path: "../fonts/webfonts" !default;
 
 @import '~bootstrap/scss/bootstrap';
 
-/*!
-* Start Bootstrap - SB Admin v7.0.7 (https://startbootstrap.com/template/sb-admin)
-* Copyright 2013-2023 Start Bootstrap
-* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-sb-admin/blob/master/LICENSE)
-*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+
+
 
 html,
 body {
   height: 100%;
 }
+.second-color {
+    background: #4f3b78;
+}
+.first-color {
+    background: #363b4e;
+}
+.my-bg{
+    height:92.3vh;
+    background: rgb(86,66,127);
+background: linear-gradient(180deg, rgba(86,66,127,1) 0%, rgba(79,59,120,1) 24%, rgba(82,62,123,1) 47%, rgba(146,127,191,1) 72%, rgba(196,187,240,1) 100%);
+}
 
+.my-mt {
+    margin-top: -70px;
+    margin-bottom: - 70px;
+
+}
+.my-btn-light{
+ color: white;
+}
+
+.my-btn-light:hover{
+    color:#4f3b78 ;
+    background-color: white;
+   }
+
+.my-topbar-bg{
+    background-color: #363b4ec4;
+}
 .fixed-top, .sb-nav-fixed #layoutSidenav #layoutSidenav_nav, .sb-nav-fixed .sb-topnav {
   position: fixed;
   top: 0;
@@ -72,7 +101,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #000;
+  background:rgba(79,59,120,1);
   z-index: 1037;
   opacity: 0.5;
   transition: opacity 0.3s ease-in-out;
@@ -150,7 +179,7 @@ body {
   color: rgba(255, 255, 255, 0.5);
 }
 .sb-topnav.navbar-light #sidebarToggle {
-  color: #212529;
+  color: rgba(79,59,120,1);
 }
 
 .sb-sidenav {
@@ -200,20 +229,21 @@ body {
 }
 
 .sb-sidenav-dark {
-  background-color: #212529;
+    background: rgb(196,187,240);
+    background: linear-gradient(180deg, rgba(196,187,240,1) 5%, rgba(146,127,191,1) 16%, rgba(79,59,120,1) 60%);
   color: rgba(255, 255, 255, 0.5);
 }
 .sb-sidenav-dark .sb-sidenav-menu .sb-sidenav-menu-heading {
-  color: rgba(255, 255, 255, 0.25);
+  color: white;
 }
 .sb-sidenav-dark .sb-sidenav-menu .nav-link {
-  color: rgba(255, 255, 255, 0.5);
+  color: #c4bbf0;
 }
 .sb-sidenav-dark .sb-sidenav-menu .nav-link .sb-nav-link-icon {
-  color: rgba(255, 255, 255, 0.25);
+  color: #c4bbf0;
 }
 .sb-sidenav-dark .sb-sidenav-menu .nav-link .sb-sidenav-collapse-arrow {
-  color: rgba(255, 255, 255, 0.25);
+  color: #c4bbf0;
 }
 .sb-sidenav-dark .sb-sidenav-menu .nav-link:hover {
   color: #fff;

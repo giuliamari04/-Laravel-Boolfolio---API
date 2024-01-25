@@ -1,0 +1,50 @@
+#login{
+
+height:90vh;
+background: #5829B7;
+background: radial-gradient(at left top, #5829B7, #A783EA);
+font-family: 'Roboto', sans-serif;
+
+    .border-login{
+        animation: changeBorderShape 10s infinite;
+        -webkit-box-shadow:0px 0px 174px 84px rgba(146,127,191,0.9);
+-moz-box-shadow: 0px 0px 174px 84px rgba(146,127,191,0.9);
+box-shadow: 0px 0px 174px 84px rgba(146,127,191,0.9);
+
+.text-fourth-color{
+    color:#c4bbf0;
+}
+    }
+    .first-color {
+        background: #363b4e;
+    }
+
+    .second-color {
+        background: #4f3b78;
+    }
+
+    .third-color {
+        background: #927fbf;
+    }
+
+    .fourth-color {
+        background: #c4bbf0;
+    }
+}
+@keyframes changeBorderShape {
+    0% {
+        border-radius:  74% 26% 79% 21% / 24% 75% 25% 76% ;
+    }
+    25% {
+       border-radius: 25% 75% 37% 63% / 53% 31% 69% 47%;
+    }
+    50% {
+      border-radius: 25% 75% 14% 86% / 78% 27% 73% 22% ;
+    }
+    75% {
+      border-radius: 25% 75% 27% 73% / 28% 27% 73% 72% ;
+    }
+    100% {
+      border-radius: 70% 30% 68% 32% / 28% 64% 36% 72% ;
+    }
+  }

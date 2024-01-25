@@ -94,7 +94,7 @@
                 </a>
             </div>
         </div>
-        <div class="sb-sidenav-footer">
+        <div class="sb-sidenav-footer text-light">
             <div class="small">Logged in as:</div>
             {{ Auth::user()->name }}
         </div>

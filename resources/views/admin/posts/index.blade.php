@@ -1,9 +1,10 @@
 @extends('layouts.admin')
 @section('content')
-    <section class="container">
-        <h1>Post List</h1>
+<div id="posts">
+    <section class="container my-mt py-5">
+        <h1 class="pt-5">Post List</h1>
        <div class="text-end">
-        <a class="btn btn-success" href="{{route('admin.posts.create')}}">Crea nuovo post</a>
+        <a class="btn my-btn-light second-color border-0  my-3" href="{{route('admin.posts.create')}}">Crea nuovo post</a>
     </div>
 
     @if(session()->has('message'))
@@ -11,7 +12,7 @@
         {{ session()->get('message') }}
     </div>
     @endif
-    <table class="table table-striped">
+    <table class="table table-striped  ">
         <thead>
         <tr>
             <th scope="col">#</th>
@@ -28,7 +29,7 @@
                     <td><a href="{{route('admin.posts.show', $post->slug)}}" title="View Post">{{$post->title}}</a></td>
                     <td>{{Str::limit($post->body,100)}}</td>
 
-                    <td><a class="link-secondary" href="{{route('admin.posts.edit', $post->slug)}}" title="Edit Post"><i class="fa-solid fa-pen"></i></a></td>
+                    <td><a class="link-secondary" href="{{route('admin.posts.edit', $post->slug)}}" title="Edit Post"><i class="fa-solid fa-pen text-light "></i></a></td>
                     <td>
                         <form action="{{route('admin.posts.destroy', $post->slug)}}" method="POST">
                         @csrf
@@ -42,5 +43,7 @@
     </table>
     {{$posts->links('vendor.pagination.bootstrap-5')}}
     </section>
+</div>
      @include('partials.modal-delete')
+
 @endsection

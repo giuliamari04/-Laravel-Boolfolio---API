@@ -1,7 +1,8 @@
 @extends('layouts.admin')
 @section('content')
-<section class="container">
-    <h1>{{$technology->name}}</h1>
+<div class="my-bg">
+<section class="container my-mt py-5 text-light">
+    <h1 class="pt-5">{{$technology->name}}</h1>
     <h3>Post List</h3>
     <ul class="list-group list-group-flush">
 
@@ -14,4 +15,5 @@
         @endforelse
     </ul>
 </section>
+</div>
 @endsection

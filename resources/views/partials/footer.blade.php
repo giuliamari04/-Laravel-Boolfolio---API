@@ -1,11 +1,11 @@
-<footer class="py-4 bg-light mt-auto">
+<footer class="py-4 first-color mt-auto">
     <div class="container-fluid px-4">
-        <div class="d-flex align-items-center justify-content-between small">
-            <div class="text-muted">Copyright &copy; Laravel-auth 2024</div>
+        <div class="d-flex align-items-center justify-content-between small ">
+            <div class=" text-light">Copyright &copy; Laravel-auth 2024</div>
             <div>
-                <a href="#">Privacy Policy</a>
+                <a href="#" class="text-light">Privacy Policy</a>
                 &middot;
-                <a href="#">Terms &amp; Conditions</a>
+                <a href="#" class="text-light">Terms &amp; Conditions</a>
             </div>
         </div>
     </div>
