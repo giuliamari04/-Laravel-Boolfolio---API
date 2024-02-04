@@ -1,0 +1,48 @@
+[
+    {
+      "name": "HTML",
+      "id": 1,
+      "url_logo": "https://icons8.com/icon/20909/html-5"
+
+    },
+    {
+      "name": "CSS",
+      "id": 2,
+      "url_logo": "https://icons8.com/icon/21278/css3"
+    },
+    {
+      "name": "JavaScript",
+      "id": 3,
+      "url_logo": "https://icons8.com/icon/PXTY4q2Sq2lG/javascript"
+    },
+    {
+      "name": "Vue.js",
+      "id": 4,
+      "url_logo": "https://icons8.com/icon/rY6agKizO9eb/vue-js"
+    },
+    {
+      "name": "Laravel",
+      "id": 5,
+      "url_logo": "https://icons8.com/icon/114956/laravel"
+    },
+    {
+      "name": "PHP",
+      "id": 6,
+      "url_logo": "https://icons8.com/icon/39852/php-logo"
+    },
+    {
+      "name": "Sass",
+      "id": 7,
+      "url_logo": "https://icons8.com/icon/QBqFNfPPB2Kx/sass"
+      },
+       {
+        "name": "Bootstrap",
+        "id": 8,
+        "url_logo": "https://icons8.com/icon/EzPCiQUqWWEa/bootstrap"
+      },
+      {
+        "name": "GitHub",
+        "id": 9,
+        "url_logo": "https://icons8.com/icon/12599/github"
+      }
+    ]

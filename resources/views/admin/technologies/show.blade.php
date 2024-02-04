@@ -3,6 +3,7 @@
 <div class="my-bg">
 <section class="container my-mt py-5 text-light">
     <h1 class="pt-5">{{$technology->name}}</h1>
+    <img src="{{Vite::asset('storage/app/image/'.$technology->name.'.png')}}" alt="{{$technology->name}}">
     <h3>Post List</h3>
     <ul class="list-group list-group-flush">
 

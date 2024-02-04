@@ -14,11 +14,14 @@ class TechnologySeeder extends Seeder
      */
     public function run(): void
     {
-        $technologies = ['html-css', 'javascript plain', 'php plain', 'laravel', 'vite js'];
+        $json = file_get_contents(__DIR__ . '/data/technologies.json');
+        $technologies = json_decode($json, true);
+        //$technologies = ['html','css', 'javascript plain', 'php plain', 'laravel', 'vite js'];
         foreach($technologies as $technology) {
             $newTechnology = new Technology();
-            $newTechnology->name = $technology;
-            $newTechnology->slug = Str::slug($technology,'-');
+            $newTechnology->name = $technology['name'];
+            $newTechnology->image = $technology['url_logo'];
+            $newTechnology->slug = Str::slug($technology['name'],'-');
             $newTechnology->save();
 
         }

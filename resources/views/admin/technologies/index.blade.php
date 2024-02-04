@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('content')
 <div id="technology">
-    <section class="container my-mt py-5">
+    <section class="container my-mt py-5 overflow-hidden ">
         <h1 class="pt-5">technology List</h1>
        <div class="text-end">
         <a class="btn  my-btn-light second-color border-0  my-3" href="{{route('admin.technologies.create')}}">Crea nuovo technology</a>
@@ -12,7 +12,7 @@
         {{ session()->get('message') }}
     </div>
     @endif
-    <table class="table table-striped">
+    <table class="table table-striped  overflow-y-scroll">
         <thead>
         <tr>
             <th scope="col">#</th>
