@@ -4,11 +4,15 @@
     <section class="container my-mt" id="item-post">
         <div class="d-flex justify-content-end align-items-center py-5">
 
-             <a href="{{route('admin.posts.edit', $post->slug)}}" class="btn btn-success px-3">Edit</a>
+             <a href="{{route('admin.posts.edit', $post->slug)}}" class="btn btn-success px-3 mt-5">Edit</a>
         </div>
         <div class="row">
-            <div class="col-4 p-5">
+            <div class="col-6 px-5">
+                @if (!$post->name)
+                <img src="{{Vite::asset('storage/app/images/' . $post->title.'.png')}}" alt="{{$post->title}}" class=" w-100">
+                @else
                 <img src="{{Vite::asset('storage/app/' . $post->image)}}" alt="{{$post->title}}">
+                @endif
             </div>
             <div class="col p-5 text-light">
                  <h1>{{$post->title}}</h1>

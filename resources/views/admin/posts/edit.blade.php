@@ -55,7 +55,7 @@
     </div>
     <div class="d-flex">
         <div class="media me-4">
-            <img class="shadow" width="150" src="{{Vite::asset('storage/app/' . $post->image)}}" alt="{{$post->title}}">
+            <img class="shadow" width="150" src="{{Vite::asset('storage/app/images/' . $post->title.'.png')}}" alt="{{$post->title}}">
         </div>
         <div class="mb-3">
                     <label for="image">Image</label>
