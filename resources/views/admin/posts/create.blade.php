@@ -1,7 +1,7 @@
 @extends('layouts.admin')
 @section('content')
-    <section class="container">
-        <h1>Post Create</h1>
+    <section class="container my-mt py-5 my-bg text-light ">
+        <h1 class="pt-5">Post Create</h1>
         <form action="{{ route('admin.posts.store') }}" enctype="multipart/form-data" method="POST">
         @csrf
      <div class="mb-3">
@@ -61,7 +61,7 @@
                 @enderror
         </div>
     </div>
-    <div class="mt-3">
+    <div class="mt-3 mb-5">
         <button type="submit" class="btn btn-success">Save</button>
         <button type="reset" class="btn btn-primary">Reset</button>
     </div>

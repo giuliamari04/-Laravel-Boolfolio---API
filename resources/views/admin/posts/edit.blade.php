@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 @section('content')
-    <section class="container">
+    <section class="container my-mt py-5 my-bg text-light ">
         <h1>Edit {{$post->title}}</h1>
         <form action="{{ route('admin.posts.update', $post->slug) }}" enctype="multipart/form-data" method="POST">
         @csrf

@@ -26,8 +26,11 @@ body {
 .first-color {
     background: #363b4e;
 }
+footer{
+    width: 85%;
+}
 .my-bg{
-    height:92.3vh;
+    min-height:92.3vh;
     background: rgb(86,66,127);
 background: linear-gradient(180deg, rgba(86,66,127,1) 0%, rgba(79,59,120,1) 24%, rgba(82,62,123,1) 47%, rgba(146,127,191,1) 72%, rgba(196,187,240,1) 100%);
 }
@@ -910,4 +913,8 @@ textarea.form-control, textarea.datatable-input {
         width: 300px;
         height: auto;
     }
+}
+.img-show{
+    max-height: 55vh;
+    overflow: hidden;
 }

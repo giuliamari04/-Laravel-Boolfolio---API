@@ -6,8 +6,8 @@
 
              <a href="{{route('admin.posts.edit', $post->slug)}}" class="btn btn-success px-3 mt-5">Edit</a>
         </div>
-        <div class="row">
-            <div class="col-6 px-5">
+        <div class="row ">
+            <div class="col-6 px-5 img-show">
                 @if (!$post->name)
                 <img src="{{Vite::asset('storage/app/images/' . $post->title.'.png')}}" alt="{{$post->title}}" class=" w-100">
                 @else
